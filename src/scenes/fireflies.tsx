@@ -1,3 +1,3 @@
-export default function Fireflies() {
+export default function FirefliesScene() {
   return null;
 }

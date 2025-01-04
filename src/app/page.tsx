@@ -1,7 +1,7 @@
 "use client";
 
-import Fireflies from "@/scenes/fireflies";
-import Grass from "@/scenes/grass";
+import FirefliesScene from "@/scenes/fireflies";
+import GrassScene from "@/scenes/GrassScene/GrassScene";
 import { useState } from "react";
 
 const scenes = ["Grass", "Fireflies"] as const;
@@ -13,9 +13,9 @@ export default function Home() {
   function getCurrentScene(scene: SceneType) {
     switch (scene) {
       case "Fireflies":
-        return <Fireflies />;
+        return <FirefliesScene />;
       default:
-        return <Grass />;
+        return <GrassScene />;
     }
   }
 
