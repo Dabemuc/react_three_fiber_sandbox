@@ -3,9 +3,15 @@
 import FirefliesScene from "@/scenes/FirefliesScene/FirefliesScene";
 import GhostOfTsushimaScene from "@/scenes/GhostOfTsushimaScene/GhostOfTsushimaScene";
 import GrassScene from "@/scenes/GrassScene/GrassScene";
+import WaterSimulationScene from "@/scenes/WaterSimulationScene/WaterSimulationScene";
 import { useState } from "react";
 
-const scenes = ["Grass", "Fireflies", "Ghost of Tsushima"] as const;
+const scenes = [
+  "Grass",
+  "Fireflies",
+  "Ghost of Tsushima",
+  "Water Simulation",
+] as const;
 type SceneType = (typeof scenes)[number];
 
 export default function Home() {
@@ -19,6 +25,8 @@ export default function Home() {
         return <GrassScene />;
       case "Ghost of Tsushima":
         return <GhostOfTsushimaScene />;
+      case "Water Simulation":
+        return <WaterSimulationScene />;
       default:
         return null;
     }

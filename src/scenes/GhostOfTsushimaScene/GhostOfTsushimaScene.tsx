@@ -215,7 +215,7 @@ function buildLeaveGeo() {
 const Lighting = () => {
   return (
     <>
-      <ambientLight intensity={0.5} />
+      <ambientLight intensity={0.3} />
       <directionalLight
         color={new THREE.Color(0xcfaa7a)}
         intensity={2}
