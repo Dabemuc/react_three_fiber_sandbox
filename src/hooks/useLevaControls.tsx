@@ -39,7 +39,6 @@ export function LevaControlsProvider({
     "Scene",
     sceneControlsConfig as Schema,
   ) as SceneControls;
-  console.log(JSON.stringify(sceneControls));
 
   const contextValues: LevaControlsContextType = {
     GLOBAL_CONTROLS: globalControls,

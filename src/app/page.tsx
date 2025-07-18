@@ -15,7 +15,7 @@ const scenes = [
 type SceneType = (typeof scenes)[number];
 
 export default function Home() {
-  const [scene, setScene] = useState<SceneType>("Ghost of Tsushima");
+  const [scene, setScene] = useState<SceneType>("Water Simulation");
 
   function getCurrentScene(scene: SceneType) {
     switch (scene) {
